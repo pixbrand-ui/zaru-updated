@@ -134,6 +134,12 @@ const Footer = () => {
                   </Link>
                 </li>
 
+                <li>
+                  <Link className="f16 mr20 colorParaLight" to="/admin">
+                    Admin
+                  </Link>
+                </li>
+
             
               </ul>
             </Col>

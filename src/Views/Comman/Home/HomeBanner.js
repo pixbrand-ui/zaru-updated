@@ -46,7 +46,6 @@ const HomeBanner = () => {
   useEffect(() => {
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition((val) => {
-        console.log("lattt", val);
         if (val) {
           setlatlong({
             latitude: val.geometry.location.lat(),
@@ -59,39 +58,42 @@ const HomeBanner = () => {
   }, []);
 
   const onSearchChanged = (data) => {
-    console.log("Data ----->>>>>", data);
     setSearchSelectedData(data);
   };
 
   const loadSubCat = async () => {
     setshowSearchProgress(true);
+    
     try {
       await HTTP.get(API.get_subcategory, false, Auth.getToken()).then(
         (res) => {
+          
           setshowSearchProgress(false);
           if (res && res.status && res.status === 200) {
             if (res.data.length > 0) {
               if (res.data) {
                 setsubcategory(res.data);
                 if (res.data.length > 0) {
-                  let temp = [];
-                  res.data.forEach((elem) => {
+                  const temp = [];
+                  res.data && res.data.forEach((elem) => {
+                    console.log("myelem",elem);
                     temp.push({
                       id: elem._id,
-                      data:
-                        elem.categoryid.category_name +
+                      data: elem?.subcategory_name +
                         " > " +
                         elem.subcategory_name,
                     });
                   });
-                  let temp2 = [];
-                  res.data.forEach((elem) => {
+                  const temp2 = [];
+                  res.data && res.data.forEach((elem) => {
                     temp2.push(
-                      elem.categoryid.category_name +
+                      elem?.subcategory_name+
                         " > " +
                         elem.subcategory_name
                     );
                   });
+
+                  console.log("temp",temp);
                   setsubcatnameonly(temp2);
                   setsubcatdata(temp);
                 }
@@ -117,6 +119,7 @@ const HomeBanner = () => {
           }
         `}
       </style>
+     
       <section
         className="homeBanner d-flex align-items-center flex-wrap position-relative"
         style={{ backgroundImage: "url(" + Img.hBanner.default + ")" }}
