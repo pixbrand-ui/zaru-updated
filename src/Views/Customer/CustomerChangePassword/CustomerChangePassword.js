@@ -121,7 +121,7 @@ const CustomerChangePassword = () => {
                       className="btnBlank eyeIcon"
                       onClick={(e) => togglePassword(!viewPassword)}
                     >
-                      {viewPassword ? Svg.eyeCut : Svg.eye}
+                      {viewPassword ? Svg.eye : Svg.eyeCut}
                     </button>
                   </div>
                   <div className="position-relative">
@@ -138,7 +138,7 @@ const CustomerChangePassword = () => {
                       className="btnBlank eyeIcon"
                       onClick={(e) => togglePasswordConfirm(!confviewPassword)}
                     >
-                      {confviewPassword ? Svg.eyeCut : Svg.eye}
+                      {confviewPassword ? Svg.eye : Svg.eyeCut}
                     </button>
                   </div>
                   <div className="position-relative">
@@ -157,7 +157,7 @@ const CustomerChangePassword = () => {
                         togglePasswordNewConfirm(!confviewNewPassword)
                       }
                     >
-                      {confviewNewPassword ? Svg.eyeCut : Svg.eye}
+                      {confviewNewPassword ? Svg.eye : Svg.eyeCut}
                     </button>
                   </div>
                 </div>

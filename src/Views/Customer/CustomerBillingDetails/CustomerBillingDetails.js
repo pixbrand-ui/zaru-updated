@@ -12,6 +12,7 @@ import Auth from "../../../Helpers/Auth/Auth";
 import AlertModal from "../../../Components/AlertModal/AlertModal";
 import LoadinMsg from "../../../Components/LoadingModal/LoadingMsg";
 import Autocomplete from "react-google-autocomplete";
+import { Svg } from "../../../Assets/Svgs/Svg";
 
 const countryListData = [{ value: "India", label: "India" }];
 
@@ -194,7 +195,7 @@ const CustomerBillingDetails = () => {
         false,
         Auth.getToken()
       ).then((res) => {
-        console.log('res', res);
+        console.log("res", res);
         if (res && res.status && res.status.toString() === "200") {
           AlertModal.show(
             `${userdata.firstname} ${userdata.lastname} your billing details has updaetd successfully.`,
@@ -232,28 +233,31 @@ const CustomerBillingDetails = () => {
                       <h3 className="fs18 colorBlack mb0">Address Details</h3>
                     </div>
                     <div className="bBottom"></div>
-              
+
                     <div className="pt30 pb30 pl30 pr30">
-                    <div className="position-relative iconLeft mb12 locationInput">
-                    <Autocomplete
-                     options={{
-                      types: ["(regions)"],
-                    }}
-                      apiKey="AIzaSyB5DozhssD2YsMZV6aOfdznWqqbR6dM6_w"
-                      onPlaceSelected={(place) => {
-                        console.log("iii",place.address_components);
-                        setLocation(place.formatted_address);
-                        setlatlong({
-                          latitude: place.geometry.location.lat(),
-                          longitude: place.geometry.location.lng(),
-                        });
-                        setcity(place.address_components[0].long_name);
-                        setstate(place.address_components[2].long_name);
-                        setcountry(place.address_components[3].long_name);
-                      }}
-                      className="w-100 inputTransparent  outlineNone mobRadius7 pl30"
-                    />
-                  </div>
+                      <div className="position-relative iconLeft mb12">
+                        <Autocomplete
+                          options={{
+                            types: ["(regions)"],
+                          }}
+                          apiKey="AIzaSyB5DozhssD2YsMZV6aOfdznWqqbR6dM6_w"
+                          onPlaceSelected={(place) => {
+                            console.log("iii", place.address_components);
+                            setLocation(place.formatted_address);
+                            setlatlong({
+                              latitude: place.geometry.location.lat(),
+                              longitude: place.geometry.location.lng(),
+                            });
+                            setcity(place.address_components[0].long_name);
+                            setstate(place.address_components[2].long_name);
+                            setcountry(place.address_components[3].long_name);
+                          }}
+                          className="w-100 inputTransparent  outlineNone mobRadius7 pl30"
+                        />
+                        <span className="iconElement iconLeft pl10">
+                          {Svg.locationPin}
+                        </span>
+                      </div>
                       <CmnInput
                         className=""
                         label="Street Address *"
@@ -264,17 +268,17 @@ const CustomerBillingDetails = () => {
                       />
                       <CmnInput
                         className=""
-                        label="Address Line 2 "
+                        label="Address"
                         type="text"
-                        placeholder="Address Line 2 "
+                        placeholder="Address"
                         value={AddressLine2}
                         onChange={(e) => setAddressLine2(e.target.value)}
                       />
-                   
+
                       <Row>
                         <Col lg={6}>
                           <CmnInput
-                          disabled
+                            disabled
                             className=""
                             label="City or Town *"
                             type="text"
@@ -296,43 +300,40 @@ const CustomerBillingDetails = () => {
                       <Row>
                         <Col lg={6}>
                           <div className="cbd-select">
-                          <CmnInput
-                          disabled
-                            className=""
-                            label="Country"
-                            type="text"
-                            placeholder="Country"
-                            value={country}
-                          
-                          />
+                            <CmnInput
+                              disabled
+                              className=""
+                              label="Country"
+                              type="text"
+                              placeholder="Country"
+                              value={country}
+                            />
                           </div>
                         </Col>
                         <Col lg={6}>
                           <CmnInput
-                          disabled
+                            disabled
                             className=""
                             label=" State or Province"
                             type="text"
                             placeholder=" State or Province"
                             value={state}
                           />
-                    
                         </Col>
                       </Row>
                       <div className="mapList mt30">
-                      <iframe
-                      key={latlong}
-                      title="542313431asd45"
-                      // #aaqib
-                      src={`https://maps.google.com/maps?q=${latlong.latitude},${latlong.longitude}&z=15&output=embed`}
-                      width="100%"
-                      height="450"
-                      style={{ border: 0 }}
-                      allowFullScreen=""
-                      loading="lazy"
-                    ></iframe>
-
-          </div>
+                        <iframe
+                          key={latlong}
+                          title="542313431asd45"
+                          // #aaqib
+                          src={`https://maps.google.com/maps?q=${latlong.latitude},${latlong.longitude}&z=15&output=embed`}
+                          width="100%"
+                          height="450"
+                          style={{ border: 0 }}
+                          allowFullScreen=""
+                          loading="lazy"
+                        ></iframe>
+                      </div>
                     </div>
                   </section>
                   <section className="bgWhite radius mb30 border">
@@ -376,8 +377,8 @@ const CustomerBillingDetails = () => {
                           <CmnInput
                             className=""
                             label="Branch/IFSC code *"
-                            type="number"
-                            placeholder="e.g. 1234567890"
+                            type="text"
+                            placeholder="MAHB0000055"
                             value={branchCode}
                             onChange={(e) => setbranchCode(e.target.value)}
                           />
