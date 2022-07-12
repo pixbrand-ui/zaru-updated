@@ -1,0 +1,17 @@
+.accordion__button::before {
+    position: absolute;
+    right: 17px;
+    top: 25px;
+  }
+  .accordion__button {
+    position: relative;
+    background: #fff;
+      background-color: rgb(255, 255, 255);
+    padding-left: 30px;
+    padding-right: 30px;
+    font-weight: 600;
+  }
+  .accordion__panel {
+    padding-left: 30px;
+    padding-right: 30px;
+  }

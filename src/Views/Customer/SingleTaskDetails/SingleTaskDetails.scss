@@ -1,0 +1,29 @@
+.w48{
+    height: 48px;
+    width: 48px;
+}
+
+.noBgonDropDown.dropdown button {
+    background: transparent;
+    border: none;
+}
+.noBorder{
+    border: none;
+}
+.borderGreen{
+    border: 2px solid var(--colorGreen);
+}
+
+
+@media only screen and (max-width:767px) {
+    .dBlock_mob span{
+        display: block;
+    }
+
+    // .mb_fd_col{
+    //     flex-direction: column;
+    // }
+}
+.svgOrange path {
+    stroke: var(--colorOrange);
+  }

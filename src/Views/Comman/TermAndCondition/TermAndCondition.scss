@@ -1,0 +1,21 @@
+.color_darkgrey{
+    color: #404145;
+}
+
+.color_lightgrey{
+    color:#7A7D85
+}
+
+.b_bottom{
+    border-bottom: 1px solid #d5d5d5;
+}
+
+.external-link{
+    text-decoration: underline !important;
+}
+
+@media only screen and (max-width: 767px) {
+    .t_c_head{
+        text-align: left !important;
+    }
+}

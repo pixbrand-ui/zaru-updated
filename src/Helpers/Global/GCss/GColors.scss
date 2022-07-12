@@ -1,0 +1,49 @@
+:root {
+  --colorBlack: #20272b;
+  --colorWhite: #fff;
+  --colorGrey: #dddedf;
+  --colorLightOrange: #f9f7f7;
+  --colorOrange: #ec7523;
+  --colorRed: #ff5757;
+  --colorGreen: #47c085;
+  --colorYellow: yellow;
+  --colorPara: #4d5255;
+}
+
+body .colorBlack {
+  color: var(--colorBlack);
+}
+.colorWhite {
+  color: #fff;
+}
+.bgBlack {
+  background: var(--colorBlack);
+}
+body .bgWhite {
+  background: #fff;
+}
+.colorOrange {
+  color: var(--colorOrange);
+}
+.colorGreen {
+  color: var(--colorGreen);
+}
+.colorRed {
+  color: var(--colorRed);
+}
+.bgLightOrange {
+  background: var(--colorLightOrange);
+}
+.bgOrange{
+  background: var(--colorOrange);
+}
+.colorGrey {
+  color: var(--colorGrey);
+}
+body .btnBlack {
+  background: var(--colorBlack);
+  color: #fff;
+}
+.bgLightOrange {
+  background: var(--colorLightOrange);
+}

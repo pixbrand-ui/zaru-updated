@@ -1,0 +1,78 @@
+.custom_tabs {
+  display: block;
+  height: 40px;
+  width: 100%;
+  border-bottom: 1px solid #e8e9e7;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.custom_tabs ul {
+  display: inline-block;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.custom_tabs ul li {
+  display: inline-block;
+  position: relative;
+  margin-right: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  color: black;
+  -moz-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.custom_tabs ul li:hover,
+.custom_tabs ul li a:hover {
+  color: orange;
+  -moz-transition: all 0.2s ease-out;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+.custom_tabs a {
+  position: relative;
+  color: black;
+}
+
+.custom_tabs ul li:hover::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  left: 0;
+  bottom: -7px;
+  border-bottom: 2px solid var(--colorOrange);
+  -moz-transition: all 0.2s ease-out;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+.custom_tab_active {
+  color: orange !important;
+}
+
+.custom_tab_active::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  left: 0;
+  bottom: -7px;
+  border-bottom: 2px solid var(--colorOrange);
+  -moz-transition: all 0.2s ease-out;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+.custom_tabdata{
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.custom_tabdata > div {
+    display: block;
+}

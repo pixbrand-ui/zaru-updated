@@ -1,0 +1,29 @@
+
+
+.inputTransparent {
+    border: 1px solid #E8E9E9;
+    -webkit-border-radius: 6px !important;
+    -moz-border-radius: 6px !important;
+    border-radius: 6px !important;
+}
+.inputTransparent:focus{
+    border-color: var(--colorOrange);
+}
+.eyeIcon {
+    position: absolute;
+    bottom: 9px;
+    right: 10px;
+}
+.iconElement {
+    position: absolute;
+    bottom: 10px;
+    right: 14px;
+}
+.validationElement {
+    color: var(--colorRed);
+}
+  .iconElement.iconLeft {
+    left: 0px;
+    width: 36px;
+    top: 10px;
+  }

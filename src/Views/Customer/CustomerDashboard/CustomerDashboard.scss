@@ -1,0 +1,51 @@
+.b-left {
+  width: 2px;
+  background: #fde3c8;
+}
+
+// .bor-Green{
+//     border: 1px solid green;
+//     border-radius: 3px;
+// }
+
+.mytasks-logo {
+  width: 45px;
+  height: 45px;
+}
+.noBgonDropDown.dropdown button {
+  background: transparent;
+  border: none;
+}
+.noBorder {
+  border: none;
+}
+.borderGreen {
+  border: 2px solid var(--colorGreen);
+}
+.borderGrey {
+  border: 2px solid rgb(189, 189, 189);
+  color: grey;
+  cursor: default;
+}
+.bBorderOrange {
+  position: relative;
+}
+.bBorderOrange::after {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  width: 100%;
+  left: 0;
+  height: 2px;
+  border-bottom: 2px solid var(--colorOrange);
+}
+
+@media only screen and (max-width: 767px) {
+  .dBlock_mob span {
+    display: block;
+  }
+}
+
+.pac-container {
+  z-index: 9999 !important;
+}

@@ -1,0 +1,72 @@
+.new-quote::before {
+  content: "";
+  border-bottom: 2px dashed var(--colorOrange);
+  position: absolute;
+  top: 25%;
+  left: 54px;
+  z-index: 1;
+  width: 86%;
+}
+
+.new-quote .circleArea {
+  border: 2px solid var(--colorOrange);
+  position: relative;
+  z-index: 1;
+  background: var(--colorLightOrange);
+  height: 50px;
+  width: 50px;
+}
+.new-quote li .circleArea::after {
+  background: var(--colorLightOrange);
+  width: 20px;
+  height: 50px;
+  position: absolute;
+  right: -22px;
+  content: "";
+  top: 0px;
+}
+.circleArea.leftDecline::before {
+  background: var(--colorLightOrange);
+  width: 20px;
+  height: 50px;
+  position: absolute;
+  left: -22px;
+  content: "";
+  top: 0px;
+}
+// .quote_no::before {
+//   content: "";
+//   border-bottom: 2px dashed var(--colorOrange);
+//   position: absolute;
+//   top: 50%;
+//   z-index: 1;
+//   width: 100px;
+//   left: 57px;
+// }
+
+// .quote_no_1{
+//   position: relative;
+//   z-index: -1;
+// }
+
+// .quote_no_2::before {
+//   content: "";
+//   border-bottom: 2px dashed var(--colorOrange);
+//   position: absolute;
+//   top: 50%;
+//   z-index: 1;
+//   width: 100px;
+//   right: 57px;
+// }
+
+
+
+@media only screen and (max-width: 1199px){
+ .width100Till1200{
+  width: 100%;
+ }
+}
+.quote_no.active {
+  background: var(--colorOrange);
+  color: #fff;
+}

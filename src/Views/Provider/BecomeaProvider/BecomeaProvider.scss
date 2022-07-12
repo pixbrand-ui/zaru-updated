@@ -1,0 +1,55 @@
+.become-a-provider{
+    background: url(../../../Assets/Img/Group54238.png);
+}
+
+.bap{
+    height: 35px;
+    width: 35px;
+}
+
+// Accordion CSS 
+
+@media only screen and (max-width: 767px) {
+    .bap-head{
+        width: 100%;
+    }
+}
+body .accordion__button {
+position: relative;
+  }
+
+body .accordion__button:hover {
+    background-color: transparent;
+  }
+
+body .accordion__button:hover {
+    background-color: var(--colorLightOrange);
+  }
+  .accordion__button::before {
+    position: absolute;
+    right: 0px;
+  }
+  .accordion__panel p {
+    color: var(--colorPara);
+  }
+  .accordion__button[aria-expanded="true"]::before, .accordion__button[aria-selected="true"]::before {
+    content: "-";
+    transform: none !important;
+    font-size: 36px;
+    border: none;
+    position: absolute;
+  }
+  body .accordion__button::before {
+    content: "+";
+    transform: none !important;
+    font-size: 36px;
+    border: none;
+    position: absolute;
+    top: 0px;
+    right: 13px;
+  }
+  body .accordion{
+      -webkit-border-radius: 0px;
+      border-radius: 0px;
+      border: none;
+  }

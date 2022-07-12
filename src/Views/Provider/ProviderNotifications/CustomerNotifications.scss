@@ -1,0 +1,51 @@
+.cn-notification svg {
+  margin-bottom: 10px;
+}
+.flex48 {
+  flex: 0 0 48px;
+}
+.flex20 {
+  flex: 0 0 20px;
+}
+
+.w20 {
+  height: 20px;
+  width: 20px !important;
+}
+.noti_link {
+  cursor: default;
+}
+
+.noti_link a h3:hover {
+  color: orange;
+}
+
+.pagination_fields {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagination_fields .pagination_prev, .pagination_next{
+    border: 1px solid #ccc;
+    background-color: #f0efec;
+    margin: 0px 5px;
+    border-radius: 5px;
+    padding: 2px 8px;
+    transition: all 0.2s ease-in-out;
+}
+
+.pagination_fields .pagination_prev:hover, .pagination_next:hover{
+    border: 1px solid rgb(206, 162, 19);
+    background-color: #f1d378;
+    transition: all 0.2s ease-in-out;
+}
+
+.pagination_fields .pagination_display{
+    margin: 0px;
+    padding: 3px 12px;
+    border-radius: 3px;
+    font-size: 14px;
+    border: 1px solid rgb(215, 217, 233);
+}

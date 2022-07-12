@@ -1,0 +1,33 @@
+@media only screen and (max-width: 767px) {
+    .b-media-para{
+        width: 100%;
+    }
+    .b-media-center-img{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 991px) and (min-width: 767px) {
+    .b-media-para {
+        width: 100%;
+    }
+    .b-media-center-img{
+        width: 65%;
+    }
+  }
+
+  .busLogoLabel {
+    background: var(--colorLightOrange);
+    width: 120px;
+    height: 120px;
+    border: 1px solid #E8E9E9;
+  }
+  .uploadBlack path {
+    stroke: #fff;
+  }
+  .height100{
+      height: 100%;
+  }
+  .h128{
+      height: 128px;
+  }

@@ -1,0 +1,53 @@
+.p_l_r_60 {
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.make-img-div img {
+  transform: translate(-58%, 50%);
+}
+
+.create-img {
+  position: relative;
+}
+.create-img::before {
+  content: "";
+  position: absolute;
+  height: 95%;
+  width: 20%;
+  // background-image: url(../../../Assets/Img/MaskGroup8.png);
+  background-image: url(../../../Assets/Img/MaskGroup8.png);
+  background-repeat: no-repeat;
+  top: 29%;
+  left: 45%;
+
+}
+
+@media only screen and (max-width: 767px) {
+  .p_l_r_0_Mob {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .create-img::before {
+    display: none;
+  }
+  .mobMb15{
+    margin-bottom: 15px;
+}
+}
+
+@media only screen and (max-width: 991px) and (min-width: 768px) {
+.create-img::before {
+  height: 61%;
+  top: 58%;
+  width: 32%;
+}
+}
+
+@media screen and (max-width:1199px) and (min-width:992px) {
+  .create-img::before {
+    height: 70%;
+    top: 47%;
+    width: 23%;
+  } 
+}

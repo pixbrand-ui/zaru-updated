@@ -1,0 +1,25 @@
+.opt-msg:focus {
+  border: 1px solid #ff5757 !important;
+  -webkit-box-shadow: 0 0 20px 5px rgba(255, 87, 87,0.1);
+  box-shadow: 0 0 20px 5px rgba(255, 87, 87,0.1);
+  background-color: #f9ecea;
+}
+
+textarea:focus-visible {
+  outline-style: none;
+}
+.wrapperRad input:checked ~ label{
+  background: #F9ECEA;
+  border-color: #FF5757 !important;
+  -webkit-box-shadow: 0 0 20px 5px rgba(255, 87, 87,0.1);
+  box-shadow: 0 0 20px 5px rgba(255, 87, 87,0.1);
+}
+.wrapperRad input ~ label:hover{
+  background: #F9ECEA;
+  border-color: #FF5757 !important;
+  -webkit-box-shadow: 0 0 20px 5px rgba(255, 87, 87,0.1);
+  box-shadow: 0 0 20px 5px rgba(255, 87, 87,0.1);
+}
+.wrapperRad input:checked ~ label .checked,.wrapperRad input ~ label:hover .checked{
+  display: block;
+}

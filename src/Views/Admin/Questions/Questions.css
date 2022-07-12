@@ -1,0 +1,62 @@
+.option-data-item-cont {
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+  flex-direction: row;
+  width: 100%;
+  padding: 8px;
+  border: 1px solid rgb(224, 226, 231);
+  background-color: rgb(242, 242, 243);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.options-data-list :only-child {
+    border-radius: 8px !important;
+}
+
+.option-data-item-cont:hover {
+  background-color: rgb(231, 231, 233);
+}
+
+.option-data-delete-text {
+  display: contents;
+  flex: 1;
+  align-items: center;
+  width: 100%;
+  max-height: 50px;
+}
+
+.option-data-delete-button {
+  background: none;
+  border: none;
+  outline: none;
+  padding: 3px;
+  display: flex;
+  flex: 0;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  max-height: 50px;
+  color: rgb(180, 42, 42);
+  transition: all 0.5s ease;
+}
+
+.option-data-delete-button :hover {
+  color: rgb(221, 10, 10);
+}
+
+.options-data-list {
+  display: flex;
+  width: 100%;
+  flex-direction: column-reverse;
+  transition: all 0.2s ease-in-out;
+}
+
+.options-data-list :last-child {
+  border-radius: 8px 8px 0px 0px ;
+}
+
+.options-data-list :first-child {
+  border-radius: 0px 0px 8px 8px ;
+}

@@ -1,0 +1,30 @@
+.faq {
+  padding: 60px;
+}
+
+.faq-input {
+  background-color: #ffffff;
+  box-shadow: 2px 15px 15px 4px #7c897e3d;
+  border: none;
+}
+
+.color_faq_para {
+  color: #292a2a;
+}
+
+.faq-links {
+  color: #313131;
+}
+
+.faq-ul {
+  margin-left: -16px !important;
+}
+
+@media only screen and (max-width: 767px) {
+    .faq {
+      padding: 20px;
+    }
+    .faq-in-mb{
+      width: 100%;
+    }
+}

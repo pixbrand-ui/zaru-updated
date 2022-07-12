@@ -1,0 +1,42 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /pbifaf/
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_FILENAME} !-l
+  RewriteRule . /pbifaf/index.html [L]
+</IfModule>
+# //for sub folder project pass: basename='/zaaruu' in index.js "zaaruu" is folder name
+<BrowserRouter basename='/zaaruu'>
+  <App />
+</BrowserRouter>
+
+# //for sub folder /htaccess file code is below:
+
+# Map all non-existing URLs to be processed by index.html,
+# so any URL that doesn't point to a JS file, CSS file, etc etc...
+# goes through my React app.
+
+#  below code works on ravi's vps server
+# <IfModule mod_rewrite.c>
+#   RewriteEngine on
+#   RewriteCond %{REQUEST_FILENAME} !-f
+#   RewriteCond %{REQUEST_FILENAME} !-d
+#   RewriteCond %{REQUEST_URI} !=/favicon.ico
+#   RewriteRule ^ index.html [L]
+# </IfModule>
+
+<IfModule mod_rewrite.c>
+  RewriteEngine on
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_URI} !=/favicon.ico
+  RewriteRule ^ index.html [L]
+</IfModule>
+
+# php -- BEGIN cPanel-generated handler, do not edit
+# Set the “ea-php74” package as the default “PHP” programming language.
+<IfModule mime_module>
+  AddHandler application/x-httpd-ea-php74 .php .php7 .phtml
+</IfModule>
+# php -- END cPanel-generated handler, do not edit

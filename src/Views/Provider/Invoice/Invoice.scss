@@ -1,0 +1,19 @@
+.pro-invoice{
+    background: #FEF1E3;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
+  }
+  
+  .dot-border-b{
+    border-bottom: 1px dotted #E8E9E9;
+  }
+
+@media screen and (max-width: 767px) {
+  
+    
+  }
+
+  @media screen and (max-width: 991px) and (min-width: 767px) {
+    .pro-invoice{
+        height:50vh;
+    }
+  }

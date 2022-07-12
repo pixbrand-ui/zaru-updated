@@ -1,0 +1,82 @@
+.h300 {
+  height: 300px;
+}
+.ratingReview {
+  position: absolute;
+  right: 0px;
+}
+
+.tri::before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 88px 50px;
+    border-color: transparent transparent #20272b transparent;
+    position: absolute;
+    left: -50px;
+    top: 0px;
+}
+.rating > span::after {
+  content: "";
+  background: #838383;
+  width: 1px;
+  height: 100%;
+  top: 0px;
+}
+.rating > span:last-child::after {
+  display: none;
+}
+.topHeader {
+  position: relative;
+  top: -24px;
+}
+.paraHeight {
+  height: 70px;
+  overflow: hidden;
+  -webkit-transition: max-height 0.25s ease-in;
+  transition: height 0.25s ease-in;
+}
+
+.paraHeight.readMoreFull {
+  height: auto;
+}
+.tdPl0 td {
+  padding-left: 0px;
+}
+.galleryArea .react-photo-gallery--gallery > div > img {
+  width: 31%;
+  -webkit-border-radius: 7px;
+  border-radius: 7px;
+  margin-right: 10px !important;
+  margin-bottom: 10px !important;
+}
+
+
+@media only screen and (max-width: 767px) {
+  .topHeader{
+    position: static;
+  }
+  .galleryArea .react-photo-gallery--gallery > div > img {
+    width: 29%;
+  }
+}
+
+@media only screen and (max-width: 992px) and (min-width: 767px ) {
+.tabMb10{
+  margin-bottom: 10px;
+}
+.tabMl0{
+  margin-left: 0px;
+}
+}
+body .mdBtn{
+  padding: 4.2px 20px;
+}
+body .mdBtn:hover{
+  padding: 4.2px 20px;
+}
+body .mdBtn:hover path{
+  padding: 4.2px 20px;
+  stroke: #fff;
+}

@@ -1,0 +1,64 @@
+.credit-badge-content {
+  position: absolute;
+  top: 20px;
+  right: 31px;
+}
+
+@media only screen and (max-width: 767px) {
+  .crb-head {
+    font-size: 24px;
+    padding-top: 10px;
+  }
+  .crb-para {
+    font-size: 13px;
+  }
+  .badge-mb {
+    bottom: 22px;
+    right: -10px;
+  }
+  .crb-badge-head {
+    font-size: 24px;
+    margin-bottom: 0;
+  }
+  .credit-badge-svg svg {
+    height: 90px;
+    width: 90px;
+  }
+  .credit-badge-content {
+    top: 18px;
+    right: 16px;
+  }
+}
+
+@media screen and (max-width: 991px) and (min-width: 767px) {
+    .crb-head {
+        padding-top: 15px;
+      }
+      .badge-mb {
+        bottom: 17px;
+      }
+}
+div[aria-labelledby='multiEmails']{
+ border: 1px solid #E8E9E9;
+ border-top-color: rgb(232, 233, 233);
+ border-right-color: rgb(232, 233, 233);
+ border-bottom-color: rgb(232, 233, 233);
+ border-left-color: rgb(232, 233, 233);
+border-radius: 6px !important;
+outline: none !important;
+-webkit-box-shadow: none;
+box-shadow: none;
+-webkit-transition: all 0.3s ease 0s;
+transition: all 0.3s ease 0s;
+}
+div[aria-labelledby='multiEmails'] input{
+  height: auto;
+  -webkit-transition: all 0.3s ease 0s;
+transition: all 0.3s ease 0s;
+ }
+ div[aria-labelledby='multiEmails']:focus,div[aria-labelledby='multiEmails']:focus-within {
+  border-color: var(--colorOrange);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  outline: none !important;
+}

@@ -1,0 +1,40 @@
+.credit-badge-content {
+  position: absolute;
+  top: 20px;
+  right: 31px;
+}
+
+@media only screen and (max-width: 767px) {
+  .crb-head {
+    font-size: 24px;
+    padding-top: 10px;
+  }
+  .crb-para {
+    font-size: 13px;
+  }
+  .badge-mb {
+    bottom: 22px;
+    right: -10px;
+  }
+  .crb-badge-head {
+    font-size: 24px;
+    margin-bottom: 0;
+  }
+  .credit-badge-svg svg {
+    height: 90px;
+    width: 90px;
+  }
+  .credit-badge-content {
+    top: 18px;
+    right: 16px;
+  }
+}
+
+@media screen and (max-width: 991px) and (min-width: 767px) {
+    .crb-head {
+        padding-top: 15px;
+      }
+      .badge-mb {
+        bottom: 17px;
+      }
+}

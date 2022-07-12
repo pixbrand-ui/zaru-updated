@@ -1,0 +1,85 @@
+.sepLeftRight span {
+  background: #fff;
+  z-index: 1;
+  position: relative;
+  padding-left: 14px;
+  padding-right: 14px;
+}
+.sepLeftRight::after {
+  content: "";
+  position: absolute;
+  background: var(--colorGrey);
+  top: 12px;
+  width: 100%;
+  height: 1px;
+  left: 0px;
+}
+.staryellow svg path {
+  fill: #fdc50d;
+}
+.staryellow svg {
+  width: 15px;
+  height: 15px;
+  line-height: 0px;
+}
+.staryellow {
+  position: relative;
+  top: -2px;
+}
+.barColorWhite svg path {
+  fill: #fff;
+}
+.sticky {
+  position: sticky;
+  top: 0px;
+}
+
+.btnTransparentBlack {
+  color: var(--colorBlack);
+  display: block;
+  text-align: center;
+  border: none;
+  -webkit-box-shadow: 0px 0px 0px 2px #000 inset;
+  box-shadow: 0px 0px 0px 2px #000 inset;
+}
+.pagi button span {
+  margin-right: 0px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.btnTransparentBlack:hover {
+  background: var(--colorBlack);
+  color: #fff;
+}
+.btnTransparentBlack:hover path {
+  stroke: #fff;
+}
+
+.excerptTaskerList {
+  overflow: hidden;
+  max-height: 3rem;
+  text-align: justify;
+  color: grey;
+  transition: max-height 0.15s linear;
+  transition: all 0.15s ease-out;
+}
+.showFull {
+  color: #000;
+  overflow-y: hidden;
+  max-height: calc(100 * 3rem);
+  transition: max-height 0.3s linear;
+  transition: all 0.3s ease-in;
+}
+
+.w200{
+  width: 200px;
+}
+
+@media only screen and (max-width: 600px) {
+  .wListingtext {
+    margin-top: 30px;
+  }
+}

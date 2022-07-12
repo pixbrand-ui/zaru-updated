@@ -1,0 +1,124 @@
+.tabbingSection{
+  -webkit-box-shadow: 0px 1px 4px 1px rgba(0,0,0, 0.2);
+  box-shadow: 0px 1px 4px 1px rgba(0,0,0, 0.2);
+}
+.sepLeftRight span {
+  background: #fff;
+  z-index: 1;
+  position: relative;
+  padding-left: 14px;
+  padding-right: 14px;
+}
+.sepLeftRight::after {
+  content: "";
+  position: absolute;
+  background: var(--colorGrey);
+  top: 12px;
+  width: 100%;
+  height: 1px;
+  left: 0px;
+}
+.staryellow svg path {
+  fill: #fdc50d;
+}
+.staryellow svg {
+  width: 15px;
+  height: 15px;
+  line-height: 0px;
+}
+.staryellow {
+  position: relative;
+  top: -2px;
+}
+.barColorWhite svg path {
+  fill: #fff;
+}
+.sticky {
+  position: sticky;
+  top: 84px;
+}
+
+.btnTransparentBlack {
+  color: var(--colorBlack);
+  display: block;
+  text-align: center;
+  border : none;
+  -webkit-box-shadow: 0px 0px 0px 2px #000 inset;
+  box-shadow: 0px 0px 0px 2px #000 inset;
+}
+.pagi button span {
+  margin-right: 0px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.btnTransparentBlack:hover {
+  background: var(--colorBlack);
+  color: #fff;
+}
+.btnTransparentBlack:hover path {
+  stroke: #fff;
+}
+
+/*custoimer*/
+.tabTrigger span {
+  -webkit-transition: all 0.3s linear 0s;
+  transition: all 0.3s linear 0s;
+}
+.tabTrigger {
+  position: relative;
+  -webkit-transition: all 0.3s linear 0s;
+  transition: all 0.3s linear 0s;
+}
+.tabTrigger:hover span {
+  color: var(--colorOrange) !important;
+}
+.activeTab span {
+  color: var(--colorOrange);
+}
+.activeTab {
+  border-color: var(--colorOrange);
+}
+.activeTab::after {
+  content: "";
+  background: var(--colorOrange);
+  height: 2px;
+  width: 100%;
+  position: absolute;
+  bottom: -5px;
+}
+.borderYellow{
+  border: 2px solid #F5B950;
+}
+.borderGreen{
+  border: 2px solid #47C085;
+}
+.borderGreen{
+  border: 2px solid #47C085;
+}
+.businessSelect {
+  min-width: 200px;
+  max-width: 200px;
+}
+
+@media only screen and (max-width: 767px) {
+  .ref button {
+    padding-left: 16px;
+    padding-right: 7px;
+  }
+  .ptmobb {
+    padding-top: 10px;
+  }
+  .ref span:last-child {
+    display: none;
+  }
+}
+
+.iconWidth svg {
+  width: 14px;
+  height: 14px;
+  margin-right: 0;
+}
+/*custoimer*/

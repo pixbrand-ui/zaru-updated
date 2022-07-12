@@ -1,0 +1,22 @@
+.cmnFileUpload {
+    background: #FDE3C8;
+    padding: 30px;
+    cursor: pointer;
+  }
+  .btn_delete_icon {
+    display: block;
+    width: 35px;
+    height: 35px;
+    border: none;
+    background: var(--colorRed);
+    position: absolute;
+    right: -10px;
+    top: -10px;
+  }
+  .afterLoad img {
+    height: 100%;
+    object-fit: cover;
+  }
+  .afterLoad {
+    height: 190px;
+  }

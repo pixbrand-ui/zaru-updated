@@ -1,0 +1,16 @@
+.pagi button span {
+    margin-right: 0px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .pagi button {
+    height: 36px;
+    width: 36px;
+  }
+  .btnTransparentBlack:hover {
+    background: var(--colorBlack);
+    color: #fff;
+  }

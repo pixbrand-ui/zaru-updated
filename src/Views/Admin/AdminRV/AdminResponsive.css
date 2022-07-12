@@ -1,0 +1,43 @@
+/* @767 */
+
+@media screen and (max-width: 767px) {
+  .admin-sidebar {
+    left: -300px;
+    position: fixed !important;
+    z-index: 999;
+  }
+}
+
+/* @991 */
+
+@media screen and (max-width: 991px) and (min-width: 767px) {
+  .admin-sidebar {
+    left: -300px;
+    position: fixed !important;
+    z-index: 999;
+  }
+}
+
+/* @1024 */
+
+@media screen and (max-width: 1024px) and (min-width: 992px) {
+  .admin-sidebar {
+    left: 0px;
+  }
+}
+
+/* @1200 */
+
+@media screen and (max-width: 1200px) and (min-width: 993px) {
+  .admin-sidebar {
+    left: 0px;
+  }
+}
+
+/* @Desktop */
+
+@media screen and (min-width: 1201px) {
+  .admin-sidebar {
+    left: 0px;
+  }
+}

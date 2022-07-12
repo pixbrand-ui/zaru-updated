@@ -1,0 +1,49 @@
+.gdtdatatable {
+  width: 100%;
+}
+
+.gdtdatatable thead tr {
+  background-color: rgb(235, 238, 241);
+  color: white;
+}
+
+.gdtdatatable thead tr td button,
+.gdtdatatable thead tr td {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: default;
+  color: rgb(10, 9, 36);
+}
+
+.curPointer {
+  cursor: pointer !important;
+}
+
+.gdtSortable {
+  position: relative;
+}
+
+.gdtSortable ::after {
+  position: absolute;
+  right: 8px;
+  top:-5px;
+  content: " \25BF";
+  font-weight: bolder;
+  font-size: 20pt;
+  color: rgb(0, 0, 0, .5);
+}
+
+/* .gdtSortable ::before {
+  position: absolute;
+  right: 0;
+  top: -5px;
+  transform: rotate(180deg);
+  content: " \25BE";
+  color: rgb(0, 0, 0);
+} */
+
+.gdtSortable.active ::after {
+  content: " \25BE";
+  color: rgb(0, 0, 0);
+}

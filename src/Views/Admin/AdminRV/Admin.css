@@ -1,0 +1,158 @@
+
+:root{
+  --colorOrange : #fd7e14;
+}
+
+
+.admin-wrapper {
+  min-height: 100vh;
+  height: 100%;
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-color: #f1f1f1;
+}
+
+.admin-wrapper * {
+  font-family: 'Heebo' !important;
+}
+
+.admin-header {
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: calc(100vw);
+  min-height: 60px;
+  max-height: 60px;
+  left: 0px;
+  padding-right: 20px;
+  background-color: #18273b;
+  border-bottom: 1px solid rgb(255, 136, 0);
+  box-shadow: 2px 0px 8px rgba(0, 0, 0, 0.5);
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  z-index: 998;
+}
+
+.admin-header-logo-area {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 250px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.admin-header-full {
+  width: 100vw;
+  left: 0px !important;
+}
+
+.admin-logo {
+  padding-left: 15px;
+  max-width: 190px;
+  min-width: 190px;
+  max-height: 40px;
+  min-height: 40px;
+  overflow: hidden;
+}
+
+.admin-logo-sidebar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 12px;
+  padding-bottom: 10px;
+}
+
+.admin-bars {
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  font-size: 1.5rem;
+  display: flex;
+  padding-left: 10px;
+}
+.admin-nobutton {
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+.admin-body-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100vw;
+  height: 100vh;
+  background-color: #e7ecf1;
+}
+
+.admin-body {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 60px;
+  padding: 10px;
+  width: 100%;
+  height: auto;
+  background-color: transparent;
+  background-color: #e7ecf1;
+}
+
+[data-id="c-sidebar-close"] .admin-body {
+  width: 100vw;
+  left: 0;
+}
+
+.color-white {
+  color: #fff;
+}
+
+.color-halfwhite {
+  color: rgb(216, 218, 224);
+}
+
+.transparent-button {
+  background: none;
+  border: none;
+  outline: none;
+  padding: 0;
+  margin: 0;
+  width: 40px;
+  height: 40px;
+  transition: all 0.2s ease;
+}
+
+.transparent-button path {
+  fill: rgb(144, 148, 165);
+  transition: all 0.2s ease;
+}
+.transparent-button:hover path {
+  fill: rgb(255, 255, 255);
+}
+
+.fs-7{
+  font-size: 14px;
+}
+
+.fs-8{
+  font-size: 12px;
+}
+
+.fs-9{
+  font-size: 10px;
+}
+
+.color-orange{
+  color: var(--colorOrange);
+}
+
+

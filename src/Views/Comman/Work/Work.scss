@@ -1,0 +1,44 @@
+.work-img {
+  margin-top: -100px;
+}
+.step5-img {
+  position: relative;
+}
+.step5-img::before {
+  content: "";
+  position: absolute;
+  height: 53%;
+  width: 20%;
+  background-image: url(../../../Assets/Img/MaskGroup8.png);
+  background-repeat: no-repeat;
+  top: 94%;
+  right: 0;
+}
+@media only screen and (max-width: 767px) {
+  .work-img {
+    margin-top: -60px;
+  }
+  .mob_t_left_w {
+    text-align: left;
+  }
+  .pb60Mob {
+    padding-bottom: 60px;
+  }
+  .step5-img::before {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 991px) and (min-width: 768px) {
+  .smTabWidth100_w {
+    width: 100%;
+  }
+  .step5-img::before {
+    width: 30%;
+  }
+}
+@media only screen and (max-width: 1199px) and (min-width: 992px) {
+  .step5-img::before {
+    width: 22%;
+  }
+}

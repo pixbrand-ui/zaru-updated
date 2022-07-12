@@ -1,0 +1,24 @@
+.ml60{
+    margin-left: 60px;
+}
+
+@media only screen and (max-width: 767px) {
+    .mob_t_left{
+        text-align: left;
+    }
+    .mb30Mob{
+        margin-bottom: 30px;
+    }
+    .pb10Mob{
+        padding-bottom: 10px;
+    }
+}
+
+@media only screen and (max-width: 991px) and (min-width: 768px) {
+    .smTabWidth100{
+        width: 100%;
+    }
+    .ml0Tab{
+        margin-left: 0;
+    }
+}

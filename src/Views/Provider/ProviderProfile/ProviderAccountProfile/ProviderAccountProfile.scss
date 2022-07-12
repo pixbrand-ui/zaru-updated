@@ -1,0 +1,29 @@
+.acp-mb {
+    position: absolute;
+    top: 42px;
+    right: 20px;
+  }
+  
+  .acp-dob {
+    position: absolute;
+    top: 12px;
+    right: 20px;
+  }
+  
+  // .react-datepicker__triangle{
+  //     display: none;
+  // }
+  
+  @media only screen and (max-width: 767px) {
+    .cap-profile {
+      flex-direction: column;
+    }
+    .cap-profile-desc{
+        margin-left: 0;
+    }
+  }
+  
+  .wh128{
+    width: 128px;
+    height: 128px;
+  }

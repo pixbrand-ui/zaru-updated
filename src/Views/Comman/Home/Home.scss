@@ -1,0 +1,211 @@
+.gtz-bor {
+  border: 2px solid #ec7523;
+  border-radius: 50%;
+  background: #fff;
+  z-index: 1;
+}
+
+.dashedVertical {
+  position: relative;
+}
+
+.dashedVertical::before {
+  content: "";
+  position: absolute;
+  border-left: 2px dashed #ec7523;
+  height: 88%;
+  width: 1px;
+  top: 0;
+  left: 27px;
+}
+.zaru-app {
+  background-image: url(../../../Assets/Img/Group54219.png);
+}
+
+.borVertical::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  right: 0;
+  top: 0;
+  background-color: var(--bgOrange);
+  width: 10px;
+}
+.mt220 {
+  margin-top: 40px;
+}
+.hov_undln:hover {
+  text-decoration: underline !important;
+}
+.browse-div{
+    position: relative;
+}
+.browse-div::before {
+  content: "";
+  position: absolute;
+  top: 46px;
+  width: 98%;
+  height: 1px;
+  border-bottom: 2px solid #e5e5e5;
+  z-index: -1;
+}
+
+.top10 {
+  top: -3px;
+}
+.result {
+  border-bottom: 2px solid var(--colorOrange);
+}
+
+// Slider CSS
+.home-slider {
+  margin-top: -170px;
+}
+
+.react__slick__slider__parent .slick-prev,
+.react__slick__slider__parent .slick-next {
+  position: absolute;
+  top: 30%;
+}
+.react__slick__slider__parent .slick-prev {
+  color: black;
+  z-index: 1;
+  margin-left: 8px;
+}
+.react__slick__slider__parent .slick-next {
+  color: black;
+  z-index: 1;
+  margin-right: 15px;
+}
+
+.react__slick__slider__parent .slick-prev:before,
+.slick-next:before {
+  color: black;
+  z-index: 1;
+}
+
+.react__slick__slider__parent_1 .slick-prev:before,
+.slick-next:before {
+  color: black;
+  z-index: 1;
+  margin-left: 8px;
+}
+
+.react__slick__slider__parent_1 .slick-prev,
+.react__slick__slider__parent_1 .slick-next {
+  position: absolute;
+  top: 50%;
+}
+
+.wrapperImg {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.slider_box {
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+// .slick-slide > div {
+//     margin: 0 10px;
+//   }
+//   .slick-list {
+//     margin: 0 -10px;
+//   }
+
+@media only screen and (max-width: 767px) {
+  body .mobColorWhite span {
+    color: #fff;
+  }
+
+  .dashedVertical::before {
+    height: 76%;
+  }
+  .home_ta_left {
+    text-align: left;
+  }
+  .bts-para {
+    width: 100%;
+    text-align: left;
+  }
+  .borVertical::after {
+    display: none;
+  }
+  .slick-prev .slick-next .slick-prev:before,
+  .slick-next:before {
+    display: none;
+  }
+  .slick-arrow .slick-prev {
+    display: none;
+  }
+  .react__slick__slider__parent_1 .slick-prev:before,
+  .slick-next:before {
+    display: none;
+  }
+  .react__slick__slider__parent .slick-prev {
+    display: none;
+  }
+  .home-slider {
+    position: relative;
+    top: 37px;
+    left: 0;
+  }
+  button.slick-arrow.slick-prev {
+    display: none !important;
+  }
+  button.slick-arrow.slick-next {
+    display: none !important;
+  }
+
+
+  .mb_mt0 {
+    margin-top: 0;
+  }
+.browse-div::before {
+    display: none;
+}
+
+  // Get things done with zaaru
+  // .w100{
+  //     width: 100%;
+  // }
+}
+
+// For Success Slider
+@media screen and (max-width: 991px) and (min-width: 767px) {
+  .dashedVertical::before {
+    height: 76%;
+  }
+  .childWhite *, .childWhite path {
+    color: #fff;
+    fill: #fff !important;
+  }
+}
+
+.slick-prev::before, .slick-next::before {
+content: "" !important;
+position: absolute;
+
+width: 28px;
+height: 28px;
+opacity: 1;
+}
+.slick-prev::before{
+  background: url(../../../Assets/Img/leftArrow.png);
+  left: 0px;
+}
+.slick-next::before{
+  background: url(../../../Assets/Img/rightArrow.png);
+  left: 0px;
+}
+.browse-div button span {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.slick-prev {
+  left: -31px;
+}
+.text-none span{
+  text-transform: none;
+}

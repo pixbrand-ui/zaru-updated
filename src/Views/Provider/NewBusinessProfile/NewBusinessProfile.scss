@@ -1,0 +1,30 @@
+.new-bsn{
+    position: absolute;
+    top: 43px;
+    left: 15px;
+}
+
+.new-bsn-hours{
+    position: absolute;
+    top: 10px;
+    left: 15px;
+}
+.ratePer .iconElement.iconLeft {
+    top: 42px;
+    left: 10px;
+  }
+  .ratePer .iconElement.iconLeft button {
+    color: var(--colorOrange);
+  }
+  .ratePer .new-bsn {
+    right: 0px;
+    left: inherit;
+  }
+  .w100{
+      width: 100px !important;
+  }
+  .notablePadding td > div {
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-bottom: 0px;
+  }

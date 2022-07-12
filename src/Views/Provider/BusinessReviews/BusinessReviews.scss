@@ -1,0 +1,27 @@
+.reviews-head{
+    width: 60%;
+}
+
+@media only screen and (max-width: 767px) {
+    .reviews-head{
+        width: 100%;
+        font-size: 22px;
+    }
+    body .reviews-head-svg svg {
+        width: auto;
+        height: 50px;
+      }
+}
+
+@media screen and (max-width: 991px) and (min-width: 767px) {
+    .reviews-head {
+        width: 100%;
+    }
+  }
+  .borderGrey{
+      border: 1px solid #E8E9E9;
+  }
+  .reviews-head-svg svg {
+    width: auto;
+    height: 80px;
+  }

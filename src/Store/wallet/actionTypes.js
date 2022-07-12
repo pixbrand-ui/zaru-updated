@@ -1,0 +1,4 @@
+/* TASKS */
+export const GET_WALLET = "GET_WALLET"
+export const GET_WALLET_SUCCESS = "GET_WALLET_SUCCESS"
+export const GET_WALLET_FAIL = "GET_WALLET_FAIL"

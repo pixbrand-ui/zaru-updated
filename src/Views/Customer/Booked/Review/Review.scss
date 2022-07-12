@@ -1,0 +1,38 @@
+.w90{
+    height: 90px;
+    width: 90px;
+}
+
+.ratings-div svg {
+    width: 32px;
+    height: 32px;
+}
+
+.ml63{
+    margin-left: 63px;
+}
+
+.dotted_border{
+    border-bottom: 2px dotted #E8E9E9;
+}
+
+.red-rating-div svg {
+    height: 15px;
+    width: 15px;
+}
+.stargrey path {
+    fill: #ddd;
+  }
+  .ratings-div span.stargrey {
+    position: relative;
+    top: -1px;
+  }
+  .ratings-div span svg {
+    display: block;
+    width: 30px;
+    height: 30px;
+  }
+  .mb20.ratings-div {
+    display: flex;
+    justify-content: center;
+  }

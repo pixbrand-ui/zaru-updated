@@ -1,0 +1,13 @@
+.otpInputWrapper input {
+    border: 1px solid #E8E9E9;
+    width: 70px !important;
+    border-radius: 7px;
+    outline: none;
+}
+.otpSep {
+    display: block;
+    width: 16px;
+}
+.otpInputWrapper input:focus {
+    border-color: var(--colorOrange);
+}

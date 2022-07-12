@@ -1,0 +1,49 @@
+.masonry {
+  //   flex: 1 0 auto;
+  //   margin: 0 1rem 1rem 0;
+  //   font-size: 2rem;
+  -webkit-column-count: 4;
+  -moz-column-count: 4;
+  column-count: 4;
+  -webkit-column-gap: 1em;
+  -moz-column-gap: 1em;
+  column-gap: 1em;
+  margin: 1.5em;
+  padding: 0;
+  -moz-column-gap: 1.5em;
+  -webkit-column-gap: 1.5em;
+  column-gap: 1.5em;
+  font-size: 0.85em;
+  grid-auto-flow: row dense;
+}
+.masonry-item {
+  //   display: inline-block;
+  //   vertical-align: top;
+  //   width: 90%;
+  //   margin-bottom: 15px;
+  display: inline-block;
+  background: #fff;
+  padding: .5em;
+  margin-bottom: .5em;
+  width: 100%;
+  -webkit-transition: 1s ease all;
+  transition: 1s ease all;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+@media only screen and (max-width: 767px) {
+    .masonry {
+      columns: 1;
+    }
+  }
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+  .masonry {
+    columns: 2;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .masonry {
+    columns: 4;
+  }
+}

@@ -1,0 +1,42 @@
+.siteHeader {
+  z-index: 3;
+  position: relative;
+}
+header .src input {
+  width: 100%;
+}
+
+.header_profile_img {
+  width: 45px;
+  height: 45px;
+}
+
+header{
+  animation-duration: 0.5s;
+  animation-direction: normal;
+  position: sticky !important;
+  width: 100%;
+  -webkit-transition: all 0.3s linear 0s;
+  transition: all 0.3s linear 0s;
+  top: 0px;
+
+}
+header.topDown{
+  -webkit-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+  box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+}
+
+header.topUp{
+  -webkit-box-shadow: 0 3px 5px rgba(57, 63, 72, 0);
+  box-shadow: 0 3px 5px rgba(57, 63, 72, 0);
+}
+
+.topDown .src,.topDown .srcWrapperHead {
+  display: none;
+}
+
+@media only screen and (max-width:767px)  {
+  body .megaMenuModal {
+    margin-top: 52.5px;
+  }
+}

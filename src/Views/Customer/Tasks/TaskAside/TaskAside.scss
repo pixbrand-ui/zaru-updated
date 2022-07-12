@@ -1,0 +1,26 @@
+.taskAside::before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    height: 100%;
+    width: 2px;
+    background: #E8E9E9;
+  }
+  .taskAside .active::before {
+    content: "";
+    left: -30px;
+    height: 100%;
+    width: 2px;
+    background: var(--colorOrange);
+    position: absolute;
+    top: -6px;
+  }
+
+  .active_sidebar {
+    color : var(--colorOrange) !important;
+  }
+
+  .pointer_none {
+    pointer-events : none !important;
+    color: grey;
+  }

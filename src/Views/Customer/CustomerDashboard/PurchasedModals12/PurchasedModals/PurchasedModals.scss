@@ -1,0 +1,47 @@
+.opt-msg:focus {
+  border: 1px solid #ff5757 !important;
+  box-shadow: 0px 0px 5px #f39191;
+  background-color: #f9ecea;
+}
+
+textarea:focus-visible {
+  outline-style: none;
+}
+
+.cancel-job-request [type="radio"]:checked + label,
+.cancel-job-request [type="radio"]:not(:checked) + label {
+  position: relative;
+  padding-left: 15px;
+  cursor: pointer;
+  // line-height: 20px;
+  display: inline-block;
+  color: black;
+}
+
+.cancel-job-request [type="radio"]:checked + label:before,
+.cancel-job-request [type="radio"]:not(:checked) + label:before {
+  display: none;
+}
+
+.cancel-job-request [type="radio"]:not(:checked) + .opt-check {
+  border: 1px solid #f9ecea;
+}
+
+.cancel-job-request [type="radio"]:checked + .opt-check {
+  border: 1px solid #ff5757;
+  background-color: #f9ecea;
+  box-shadow: 0px 0px 5px #f39191;
+}
+
+.cancel-job-request [type="radio"]:checked + label::after {
+  content: "";
+  position: absolute;
+  right: 0 !important;
+  top: 15px;
+  background-image: url(../../../Assets/Img/red_right.png) !important ;
+  background-repeat: no-repeat;
+  border-radius: none !important;
+  border-radius: 0;
+  background-color: transparent;
+  left: 90%;
+}
