@@ -359,7 +359,8 @@ const CustomerAccountProfile = (props) => {
                             <DatePicker
                               selected={dob}
                               onChange={(dob) => setdob(dob)}
-                              dateFormat="yyyy-M-dd"
+                              // dateFormat="yyyy-M-dd"
+                              dateFormat="dd-MM-yyyy"
                               locale="es"
                               placeholderText="Choose Date"
                               className="w-100 inputTransparent  outlineNone"
